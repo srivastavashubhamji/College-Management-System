@@ -1,0 +1,1 @@
+this folder contains a file "main.js" that contains all the javascript funcitions which are user in the repo.
