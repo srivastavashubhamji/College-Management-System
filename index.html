@@ -1,15 +1,16 @@
 <!DOCTYPE html><html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <title>Collage Management System</title>
     <meta name="viewport" content="width=device-width">
+    
     <link rel="stylesheet" href="./css/style.css" type="text/css">
+    
     <link rel="stylesheet" href="./css/all.css" type="text/css">
     <script src="./jsFiles/main.js"></script>
 </head>
 
-<body>
+<body> 
     <div class="header">
         <div class="leftHead">
             <a href="index.html" class="aimage"><img src="images/newcms.PNG" alt="CMS Image" id="topLogo">
@@ -19,13 +20,77 @@
             <a href="javascript:void(0);" onclick="displayMedia()" class="dots">
                 <i class="fas fa-ellipsis-v dottedi" id="dots"></i>
             </a>
-            <!--            <div class="rightLastFour" id="rLastFour">-->
             <a href="#" class="ss"><i class="fab fa-twitter-square"></i></a>
             <a href="#" class="ss"><i class="fab fa-google-plus-square"></i></a>
             <a href="#" class="ss"><i class="fab fa-facebook-square"></i></a>
             <a href="#" class="ss"><i class="fab fa-whatsapp-square"></i></a>
-            <!--            </div>-->
         </div>
     </div>
-    </body>
+
+<!--   ------ This is the Navigation Bar Section ---- -->    
+    
+
+    <div class="navMain">
+    <!-- ---- This is the Three Bars visible only at Tablet size --- -->
+        <a href="javascript:void(0);" onclick="effectNavBars('1')" class="Bars" id="Abars">
+            <i class="fa fa-bars ibars" id="bars"></i>
+        </a>
+    <!-- ---- This is Cancel Sign visible when Nav Clicked to See -- -->
+        <ul class="nav" id="nav">
+            <li class="drop first">
+                <a href="javascript:void(0);" onclick="effectNavBars('-1')" class="cancel" id=" cancela">
+                    <i class="fa fa-times" id="cancelBar"></i>
+                </a>
+            </li>
+    <!-- ---- Here are the Main Contents of Navigation Bar  ----- -->
+           
+            <li class="drop">
+                <a href="#" class="btn"><i class="fas fa-home" ></i>  Home</a>
+            </li>
+            <li class="drop">
+                <a href="#" class="btn"><i class="fas fa-book"></i> Courses <i class="fas fa-caret-down" onclick="over('0')"></i></a>
+                <div class="dropcontent">
+                    <a href="#">UG</a>
+                    <a href="#">PG</a>
+                    <a href="#">Diploma</a>
+                </div>
+            </li>
+            <li class="drop">
+                <a href="#" class="btn" ><i class="fas fa-poll"></i>   Results <i class="fas fa-caret-down" onclick="over('1')" ></i></a>
+                <div class="dropcontent">
+                    <a href="#">UG Results</a>
+                    <a href="#">PG Results</a>
+                    <a href="#">Diploma Results</a>
+                </div>
+            </li>
+            <li class="drop">
+                <a href="#" class="btn"><i class="fas fa-coins"></i> Fee Structure <i class="fas fa-caret-down" onclick="over('2')"></i></a>
+                <div class="dropcontent">
+                    <a href="#">UG Courses Fee</a>
+                    <a href="#">PG Courses Fee</a>
+                    <a href="#">Diploma Courses Fee</a>
+                </div>
+            </li>
+            <li class="drop">
+                <a href="#" class="btn"><i class="fab fa-app-store-ios"></i> About Us <i class="fas fa-caret-down" onclick="over('3')"></i></a>
+                <div class="dropcontent">
+                    <a href="#">Collage past Years</a>
+                    <a href="#">Director</a>
+                </div>
+            </li>
+            <li class="drop">
+                <a href="#" class="btn"><i class="fas fa-phone"></i> Contact Us <i class="fas fa-caret-down" onclick="over('4')"></i></a>
+                <div class="dropcontent">
+                    <a href="#">Phone</a>
+                    <a href="#">Email</a>
+                </div>
+            </li>
+            
+<!-- ---- Login Button ----- -->
+            <li class="drop loginLi">
+                <a href="login.html" class="btn"><i class="fas fa-user"></i> <span>Login</span></a>
+            </li>
+        </ul>
+    </div>
+</body>
 </html>
