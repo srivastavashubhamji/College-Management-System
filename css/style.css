@@ -7,6 +7,50 @@ body
     padding: 0;    
 }
 
+/* -------- Navigation Bar styling Start --------- */
+.nav
+{
+    overflow: hidden;            
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: green;
+}
+
+.nav .dropcontent a
+{
+    background-color: rgb(20,180,0);
+    font-weight: 800;
+    width: 240px;
+    color: ghostwhite;
+    font-family:serif;
+}
+
+.drop
+{
+    float: left;
+}
+.drop.loginLi
+{
+    float: right;
+}
+.dropcontent
+{
+    display: none;
+    margin: 0px 0px 0px 5px;
+    border: none;
+    border-radius: .3cm;    
+}
+
+.nav a
+{
+    background-color: green;
+    display: block;
+    padding: 14px;
+    text-decoration: none;
+    color: aliceblue;
+}
+
 
 /* -------- Header  --------*/
 .header
@@ -21,7 +65,7 @@ body
     padding-left: 20px;
 }
 
-/*    share media's Position and Margin */
+/* -----------   share media's Position and Margin -----------*/
 .rightHead
 {
     float: right;
@@ -33,7 +77,6 @@ body
 .dots
 {     
     display: none;
-    /*    three dots hidden */
 }
 .dots i
 {
@@ -49,7 +92,6 @@ body
 {
     font-size: 30px;
 }
-/* ---- three bars -----*/
 .bars,.Bars
 {
     display: none;
@@ -59,10 +101,25 @@ body
     display: none;
 }
 
-/*----- Share Media On Hover ------*/
+.nav .btn:hover
+{
+    background-color: rgb(0,160,0);
+}
+.dropcontent a:hover
+{
+    background-color: rgb(0,200,20);
+}
+.drop:hover .dropcontent
+{
+    position: absolute;
+    display: block;
+}
+
+/*----------- Share Media On Hover -----------*/
+
 .fa-twitter-square:hover,.fa-twitter-square:active
 {
-    color: rgb(100,25,180);
+    color: blue;
     transition: color 800ms ease-in-out;
 }
 .fa-google-plus-square:active,.fa-google-plus-square:hover
@@ -80,22 +137,21 @@ body
     color: rgb(20,20,180);    
 }
 
-/* ----------- Rotate the Share Media Dots on Click -----------*/
 .dottedi.responsive
 {
-    transform: rotate(360deg);
-    transition: 500ms ease-in-out;
+    transform: rotate(180deg);
+    transition: 400ms ease-in-out;
     font-size: 20px;
 }
 .dottedi
 {
-    transform: rotate(-360deg);
-    transition: 500ms ease-in-out;
+    transform: rotate(-180deg);
+    transition: 400ms ease-in-out;
 }
 
 /* -------- Responsive : Three Dots And Shsare media ------- */
 
-@media screen and (max-width: 870px)
+@media screen and (max-width:870px)
 {   
     .drop.first
     {
@@ -138,6 +194,8 @@ body
         display: inline;
     }
     
+/*    ------ when THEEE Bars clicked ------*/
+    
     .drop
     {
         float: none;
@@ -146,6 +204,75 @@ body
     {
         float: none;
     }
+    
+/*     --------THree bars-------    */
+    
+    .Bars
+    {
+        font-size: 32px;
+        position: absolute;
+        top: 18px;
+        left: 3px;
+        padding: 5px 10px;
+        display: block;
+    }
+    .Bars:hover
+    {
+        background-color: lightgray;
+    }
+    .Bars:active .Bars i
+    {
+        color:green;
+    }
+    
+    .nav.responsive
+    {
+        position: absolute;
+        width:240px;
+        top: 11px;
+        display: block;
+    }
+    .cancel i
+    {
+        color:red;
+        font-size: 25px;
+        float: right;
+        padding:2px 14px 0px 14px;
+        position: absolute;
+        right: 0;
+        top: 0px;
+    }
+    .cancel i:hover
+    {
+        background-color: rgb(20,180,20);
+    }
+    .nav
+    {
+        display: none;
+    }
+    
+    
+    .nav.responsive .drop:hover .dropcontent
+    {
+        position: relative;
+        display: none;
+    }
+    .nav.responsive .drop .dropcontent
+    {
+        margin-left: 30px;
+    }
+    .drop .fa-caret-down
+    {
+        float: right;
+        padding: 2px 5px 2px 5px;
+        background-color: rgb(10,180,0);
+        border: none;
+        border-radius: 50% 50%;
+        margin-top: 2px;
+    }
+    
+
+    
 }
 
 @media screen and (max-width:920px)
@@ -155,6 +282,7 @@ body
         display: none;
     }
 }
+
 @media screen and (max-width:480px)
 {
     .rightHead
@@ -183,6 +311,18 @@ body
     {
         margin-left: 7px;
     }
+    .aBars
+    {
+        font-size: 22px;
+        position: absolute;
+        top: 9px;
+        left: 1px;
+        padding: 5px 10px
+    }
+    .Bars
+    {
+        font-size: 22px;
+        top: 9px;
+    }
 }
-
 
