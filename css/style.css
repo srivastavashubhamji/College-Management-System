@@ -326,3 +326,172 @@ body
     }
 }
 
+
+/* ************** Login Form Styling Start **************/
+div.mainLogin
+{
+    background-color: rgb(240,240,240);
+    width: 400px;
+    height: 420px;
+    box-shadow: 10px 10px 12px grey;
+}
+.mainLogin 
+{
+    border-radius: .5cm;
+    margin: 110px auto;
+}
+.mainLogin .linHead
+{
+    text-align: center;
+    border-radius: .5cm .5cm 0cm 0cm;
+    background-color: red;
+    padding: 10px 0px 10px 0px;
+    font-family: serif;
+    font-weight: 600;
+    font-size: 45px;
+    color: white;
+}
+.mainLogin .loginInput
+{
+    height: 45px;
+    border-radius: .2cm;
+    border: none;
+    border-bottom: 2px solid red;
+    width: 90%;    
+    margin-left: 20px;
+    margin-bottom: 13px;
+    font-size: 16px
+}
+.mainLogin .loginInput[type="text"],.loginInput[type="password"]
+{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.mainLogin .input.btn
+{
+    padding: 10px 0px 8px 0px;    
+    font-weight: 600;
+    font-family: serif;
+    font-size: 30px;
+    border: 2px solid rgb(0,190,0);
+    border-bottom: 4px solid rgb(0,160,0);
+    background-color: rgb(0,190,0);
+    color: white;
+    transition: all 1s;
+    width: 90%;    
+    margin-left: 20px;
+    margin-bottom: 18px;
+    border-radius: 10px;
+}
+.mainLogin .input.btn:hover
+{
+    transition: 1s;
+    background-color: rgb(150,20,20);
+    border: 1px solid  rgb(180,20,20);
+    border-bottom: 4px solid  rgb(80,20,20);
+}
+.mainLogin .rem
+{
+    margin-left: 20px;
+}
+.mainLogin input[type="checkbox"]
+{
+    width: 18px;
+    height: 18px;
+}
+.mainLogin .loginLabel
+{
+    color: blue;;
+    font-size: 20px;
+}
+.mainLogin .loginFoot
+{   
+    width: 100%;
+    background-color: red;
+    height: 70px;    
+    border-radius: 0 0 .4cm .4cm;
+    margin-top: 22px;    
+    padding: 5px 5px;
+}
+
+.loginFoot a
+{
+    height: 70px;    
+    color:white;
+    font-weight: 700;
+    font-family: serif;
+    text-decoration: none;
+    display: inline-block;    
+    padding: 20px 20px 20px 20px;
+    font-size: 18px;
+    width: 200px;
+}
+.loginFoot .loginB
+{
+    float: right;    
+}
+.loginFoot .loginA
+{
+    margin-top: -5px;
+    margin-left: -5px;
+    padding-top: 27px;
+    transition: all 1s;
+}
+.loginFoot .loginB
+{
+    padding-top: 27px;
+    margin-top: -5px;
+    margin-right: -5px;
+    transition: all 1s;
+}
+
+.loginFoot .loginA:hover
+{
+    background-color: rgb(0,200,0);    
+    border-radius: 0 0 0cm .4cm;
+    transition: all 1s;
+}
+.loginFoot .loginB:hover
+{
+    background-color: rgb(0,200,0);
+    border-radius: 0 0 .4cm 0cm;
+    transition: all 1s;
+}
+
+
+@media screen and (max-width:520px)
+{
+    div.mainLogin
+    {
+        width: 340px;
+        height: 400px;
+        box-shadow: 10px 10px 12px grey;
+    }
+    .mainLogin input.btn
+    {
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+    
+
+    .loginFoot
+    {   
+        margin-top: 15px;
+        box-shadow: 9px 10px 11px grey;
+    }
+    .loginFoot a
+    {
+        color:white;
+        padding: 20px 0px 20px 5px;
+        font-size: 18px;
+        width: 170px;
+        text-align: center;
+    }   
+}
+@media screen and (max-width:372px)
+{
+    body.loginBody
+    {
+        zoom:80%;
+    }
+}
