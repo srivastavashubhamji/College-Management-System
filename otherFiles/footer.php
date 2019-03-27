@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- ^^^^^^^^^^ Head Section ^^^^^^^^^^ -->
 <head>
     <meta charset="UTF-8">
     <title>Footer ji</title>
     <link rel="stylesheet" href="./cssFooter1.css">
     <link rel="stylesheet" href="./css/all.css">
 </head>
+<!-- ^^^^^^^^^^ Body Section ^^^^^^^^^^ -->	
 <body>
     <h2>Footer Demo</h2>
     <hr>
+	<!-- ^^^^^^^^^^ Main Section ^^^^^^^^^^ -->
     <div class="footMain">
-<!--        <div class="ftrcols">-->
+	<!-- ------------ Social Media ------------ -->
             <div class="ftr social">
                 <p>Social Media</p>
                 <div class="socialCont">
@@ -22,7 +25,7 @@
                     <img src="./images/logo-viber.png" alt="Viber">
                 </div>
             </div>            
-            
+    	<!-- ------------ Latest Placements ------------ -->
         <div class="ftr place">
             <p>Placements</p>
             <div class="placeCont">
@@ -36,7 +39,8 @@
                 <div>Amazon <span class="ftrPlcTitles">Pvt. Lmt.</span></div>
             </div>
         </div>
-		            <div class="ftr links">
+	<!-- ------------ Quick Links ------------ -->	    
+    	<div class="ftr links">
                 <p class="linksP">Quick Links</p>
                 <div class="linksCont">
                     <div class="linksCols">
@@ -53,6 +57,23 @@
                         <p><a href="#"><i class="fas fa-tv"></i> Media</a></p>
                         <p><a href="#"><i class="fas fa-user"></i> Login</a></p>
                     </div>
+                </div>
+            </div>
+	    <div class="ftr contus">
+                <p>Contact Us</p>
+                <div class="contusCont">
+                    <div>
+                        <span><i class="fas fa-phone-volume"></i> <a href="#"> +91-860 172 5056</a></span>
+                    </div>
+                    <div>
+                        <span><i class="fas fa-envelope"></i>  <a href="#">shubhsrivastava271999@gmail.com</a></span>
+                    </div>
+                    <div>
+                        <span><i class="fas fa-route"></i>  <a href="#">Main Branch :Basharatpur, Gorakhpur</a></span>
+                    </div>
+                    <div id="thisFtr"><i class="fas fa-map-marker-alt"></i> 
+                        <span><a href="#">Head-Office: Ram Janki Nagar,Ram Preet Chowk, GKP, UP, India</a></span>
+                    </div>                    
                 </div>
             </div>
 	</div>
