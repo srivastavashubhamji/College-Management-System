@@ -495,3 +495,59 @@ div.mainLogin
         zoom:80%;
     }
 }
+
+
+/* --------------------------------------- */
+/* ----------- Footer Styling ------------ */
+/* --------------------------------------- */
+*{
+    margin: 0;
+    padding: 0;    
+    box-sizing: border-box;    
+}
+body
+{
+    background-color:floralwhite;
+}
+
+.footMain
+{
+    background-color: darkblue;
+    padding: 20px 40px 40px 40px;
+    overflow: hidden;
+}
+.ftr
+{
+    float: left;
+}
+/* ---------- Footer Four Titles ---------- */
+.ftr p
+{
+    font-weight: 600;
+    font-family: serif;
+    font-size: 22px;
+    color: white;    
+    margin-bottom: 10px    
+}
+.ftr > p
+{
+    text-align: center;
+}
+.ftr > div
+{
+    padding-top: 15px;
+}
+.ftr
+{
+    margin-left: 5%;
+}
+.ftr.social
+{
+    width: 200px;
+/*    text-align: center;*/
+}
+.ftr.links .linksCols
+{
+    margin-left: 25px;
+    margin-top: 5px;
+}
