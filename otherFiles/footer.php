@@ -1,18 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- ------ Head Section ------ -->
 <head>
     <meta charset="UTF-8">
     <title>Footer ji</title>
     <link rel="stylesheet" href="./cssFooter1.css">
     <link rel="stylesheet" href="./css/all.css">
 </head>
-<!-- ------ Body Section ------ -->
 <body>
     <h2>Footer Demo</h2>
     <hr>
     <div class="footMain">
-    <!-- ------ Social Media Section ------ -->
+<!--        <div class="ftrcols">-->
             <div class="ftr social">
                 <p>Social Media</p>
                 <div class="socialCont">
@@ -24,7 +22,7 @@
                     <img src="./images/logo-viber.png" alt="Viber">
                 </div>
             </div>            
-    <!-- ------ Latest Plasements Section ------ -->            
+            
         <div class="ftr place">
             <p>Placements</p>
             <div class="placeCont">
@@ -38,6 +36,25 @@
                 <div>Amazon <span class="ftrPlcTitles">Pvt. Lmt.</span></div>
             </div>
         </div>
+		            <div class="ftr links">
+                <p class="linksP">Quick Links</p>
+                <div class="linksCont">
+                    <div class="linksCols">
+                        <p><a href="#"><i class="fas fa-home"> </i> Home</a></p>
+                        <p><a href="#"><i class="fas fa-book-reader"></i> Courses</a></p>
+                        <p><a href="#"><i class="fas fa-pen"></i> News</a></p>
+                        <p><a href="#"><i class="fas fa-book"></i> Results</a></p>
+                        <p><a href="#"><i class="fas fa-camera"></i> Gallary</a></p>
+                    </div>
+                    <div class="linksCols">
+                        <p><a href="#"><i class="fas fa-newspaper"></i> Latest News</a></p>
+                        <p><a href="#"><i class="fas fa-clock"></i> Media</a></p>
+                        <p><a href="#"><i class="fas fa-copy"></i> Toppers</a></p>
+                        <p><a href="#"><i class="fas fa-tv"></i> Media</a></p>
+                        <p><a href="#"><i class="fas fa-user"></i> Login</a></p>
+                    </div>
+                </div>
+            </div>
 	</div>
 </body>
 </html>
