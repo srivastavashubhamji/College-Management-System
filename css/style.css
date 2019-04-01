@@ -497,18 +497,9 @@ div.mainLogin
 }
 
 
-/* --------------------------------------- */
-/* ----------- Footer Styling ------------ */
-/* --------------------------------------- */
-*{
-    margin: 0;
-    padding: 0;    
-    box-sizing: border-box;    
-}
-body
-{
-    background-color:floralwhite;
-}
+/*====================================================*/
+/*=================== Footer Start ===================*/
+/*====================================================*/
 
 .footMain
 {
@@ -541,6 +532,7 @@ body
 {
     margin-left: 5%;
 }
+
 .ftr.social
 {
     width: 200px;
@@ -551,3 +543,203 @@ body
     margin-left: 25px;
     margin-top: 5px;
 }
+
+
+.ftr.links p
+{
+    font-size: 17px;
+}
+.ftr.links .linksP
+{
+    font-size: 21px;
+}
+.linksCols i
+{
+    margin: 0px 5px;
+}
+.ftr.links .linksCont p
+{
+    margin-bottom: 15px    
+}
+.linksCont p i
+{
+    color: antiquewhite;
+}
+.ftr.contus
+{
+    width: 300px;
+}
+.ftr.contus p
+{
+    padding-right: 30px
+}
+.ftr.social p
+{
+    padding-right: 25px;
+}
+
+.ftr.social img
+{
+    float: left;
+    margin: 0px 10px 15px 15px;
+}
+.ftr.links
+{
+    width: 280px; 
+}
+.contusCont div
+{
+    margin-bottom: 15px;
+    letter-spacing: .8px;    
+}
+.ftr.contus i
+{
+    color:antiquewhite;
+    width: 20px;    
+}
+
+.linksCont .linksCols
+{
+    float: left;
+}
+
+
+.ftr a
+{
+    text-decoration: none;
+    color: red;
+    transition-duration: .7s;
+}
+.ftr a:hover
+{
+    color: aqua;
+}
+.placeCont a
+{
+    text-decoration: none;
+    color: red;
+    margin-bottom: 15px;
+    text-align: center;
+    padding-right: 10px;
+    display: block;
+}
+.ftrPlcTitles
+{
+    display: none;
+}
+.ftr.social img
+{
+    height: 40px;
+    width: 40px;
+}
+.placeCont img
+{
+    height: 40px;
+    width: 90px;
+    border-radius: 5px;    
+}
+
+/* -------------- Responsive : Footer  -------------- */
+@media screen and (max-width:1200px)
+{
+    .ftr
+    {
+        margin-left: 3%;
+    }    
+}
+@media screen and (max-width:1120px)
+{
+    .footMain
+    {
+        padding: 20px 40px 40px 10px;
+    }
+}
+@media screen and (max-width:1066px)
+{
+    .footMain
+    {
+        padding: 20px 10px 40px 0px;
+    }
+}
+@media screen and (max-width:1020px)
+{
+    .placeCont img
+    {
+        width: 40px;
+        margin-left: 25px;
+    }
+    .ftr.social img
+    {        
+        height: 40px;
+        width:  40px;
+        margin: 0px 10px 20px 15px;
+    }    
+    .ftr
+    {
+        float: none;
+        box-sizing: border-box;
+    }    
+    
+    .ftr, .ftr.social , .socialCont,.ftr.links,.ftr.contus
+    {
+        width: 400px;
+    }
+    .ftr
+    {
+        margin: 0;
+        margin: 0px auto 50px auto ;        
+    }
+    .ftr.social p,.ftr.links>p,.ftr.contus>p
+    {
+        padding-right: 0px;
+    }
+    .ftr
+    {        
+        flex-direction: column;
+        display: flex;
+    }
+    .ftr.place img
+    {
+        width: 70px;
+    }
+    .placeCont a
+    {   
+        width: 220px;
+        transform: translate(100px,-33px);
+        font-size: 18px;
+    }
+    .ftrPlcTitles
+    {
+        display: inline 
+    }
+    .ftr > div:not(:nth-child(1))
+    {
+        padding-left: 55px
+    }
+    .ftr.social div
+    {
+        padding-left: 0px;
+    }   
+}
+@media screen and (max-width:520px)
+{
+    .ftr.social img
+    {
+        height: 30px;
+        width: 30px;
+    }
+    .ftr.social div
+    {
+        padding: 0;
+        padding: 20px 0px 0px 30px ;
+    }
+   
+}
+
+.ftr img:hover
+{
+    cursor: pointer;
+    border: 2px solid red;
+    transition-duration: 0.5s;
+}
+/* --------------- Footer styling end Completly  ---------------*/
