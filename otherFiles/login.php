@@ -42,10 +42,10 @@
     {
         $uname = $_POST["username"];
         $pass = $_POST["password"];
-        $sql="SELECT * FROM `user_create` WHERE `username`='$uname' and `password`='$pass'";
-        $run = mysqli_query($conn,$sql);    // FETCHING THE RECORD WHICH MAY CONTAINS THE RECORD ACCORDING TO UNAME AND PASS //
-        $result = mysqli_num_rows($run);    // COUNTING THE FETHCED RECORD ( IF USERNAME AND PASSWORD ARE MATCHED )//           
-        if($result < 1)                     // THAT MEANS UNAME OR PASS NOT FOUND IN DATABASE
+        $sql="SELECT * FROM `user_create` WHERE `username`='$uname'";
+        $run = mysqli_query($conn,$sql);    // FETCHING THE RECORD WHICH MAY CONTAIN THE VALUES SAME AS UNAME //
+        $result = mysqli_num_rows($run);    // COUNTING THE FETHCED RECORD ( IF USERNAMEWAS MATCHED )//           
+        if($result < 1)                     // THAT MEANS UNAME NOT FOUND IN DATABASE
         {   
             ?>           
             <script>                
