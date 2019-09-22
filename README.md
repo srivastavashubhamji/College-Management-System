@@ -5,6 +5,7 @@ CMS is a Web Application which provides services for a College including
 ### Courses offered by the college,
 ### Latest Placements, 
 ### New Registration feature for site viewers,
+### Login/Logout feature for site viewers,
 ## Admin Panel
 ### Login feature for the College Staff to Add/Update the details of students,
 ### Login feature for the Director to Add/Remove/Update the details of College Staff and more.
